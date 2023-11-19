@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Las torres del Paine ⛰️</title>
+  </head>
+
+  <style>
+
+          body {
+            margin: 5px 5px;
+            background:#f2ebf2;
+            color: #5D6161;
+
+          }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font: weight 900;
+      padding: 40px 10px 10px 5px;
+      font-family: 	'Times New Roman', Times, serif; 
+      text-transform: uppercase;
+      color:#8f8787;
+      
+
+
+    }
+
+    h1:hover {
+  opacity: 0.3;
+  color: #005455;
+}
+
+.box {
+  margin: 0 auto;
+  background: linear-gradient(109.5deg, rgb(229, 233, 177) 11.2%, rgb(223, 205, 187) 100.2%);
+max-width: 900px;
+border-radius: 20px 20px;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+}
+
+
+h2 {
+text-align: center;
+font-family: Garamond;
+font-weight: lighter;
+font-size: 16px;
+}
+
+
+img:hover {
+  filter: opacity(.5);
+}
+
+
+img {
+ 
+display: block;
+margin: 0 auto;
+ width: 500px;
+ border-radius: 5% 8% 5% 8%;
+ transition:all 200ms ease;
+  opacity: 1;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 14px;
+  
+  
+}
+
+button:hover {
+  color: #f5f0fe;
+background: #005455;
+  cursor: pointer;
+
+
+}
+
+
+button {
+
+  margin: 10px auto;
+  display: block;
+  padding: 15px 20px;
+  color:#bb6e4d;
+  font-size: 16px;
+  background: transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+color:#e1cae5;
+  border-radius: 10px;
+  border: 1px #005455 solid;
+
+transition:all 200ms ease;
+  opacity: 1;
+  color:#bb6e4d;
+
+}
+
+
+a:hover {
+  opacity: 0.3;
+  color: red;
+}
+
+
+a{
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  opacity: 1;
+  
+}
+
+
+h3{
+
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+  
+
+}
+
+
+.footer{
+ text-align: center;
+ top: 1px;
+ font-size: 12px;
+ padding: 10px 50px;
+ 
+
+} 
+
+.learnmore {
+  color: #005455;
+}
+
+
+ 
+
+  
+  </style>
+  <body>
+
+
+    <div class="box">
+      <h1>
+        I love Las Torres del Paine
+      </h1>
+      <hr>
+      <h2>
+        Torres del Paine National Park is one of the most spectacular <br>
+         national parks in the country. 
+      </h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/340/original/806415-Patagonia-Chile-Mountains-Stones-Rivers-Scenery.jpg?1700347568"
+        alt="park"
+      />
+
+      <p>
+        Torres del Paine National Park was declared a biosphere reserve by UNESCO in 1978, <br>
+        the Torres del Paine National Park <br>(situated in the Magallanes 12th region in Chile) is
+        <br> internationally recognized as one of the most beautiful, unique and uncontaminated places <br>
+        on the planet. It is a place of lakes, rivers, waterfalls,glaciers, forests and incredible wildlife, <br>
+        all of which make it an exciting destination for wildlife observers and adventure sportsmen alike.
+  </p>
+
+  <h3>
+    <strong>Torres del Paine National Park Basic Information</strong><br>
+
+Region of Magallanes y Antártica Chilena,<br> 
+400 km to the NE of Punta Arenas. <br>
+ Puerto Natales lies 112km to the south east. 
+  </h3>
+
+      <a
+        href="https://torresdelpaine.com/"
+        target="_blank"
+        class="learnmore">
+        Learn more
+      </a>
+
+    <hr>
+      
+      <button class="button">
+        🌲 Buy a ticket here!
+      </button>
+
+          
+      <div class="footer">
+       <strong>Code by</strong></span>
+        <em>Alejandra Roa</em>
+        <span class="contact"><a
+        href="https://www.linkedin.com/in/alejandra-roa-824a57258/"
+        target="_blank"
+        class="learnmore">Contact me
+      </span></a> 
+      </div>
+    </div>
+
+    <script>
+function buy(){
+  let name = prompt("What is your name?")
+  let question= prompt("Would you like to visit the park?");
+question= question.toLowerCase().trim();
+
+if (question ==="yes") 
+  alert("You are awesome!😻 " + name);
+ else{
+  alert("Too bad,You should come here 🤗,"+ name );
+  }
+}
+
+
+let button = document.querySelector("button")
+button.addEventListener("click",buy);
+    </script>
+
+  </body>
+</html>
